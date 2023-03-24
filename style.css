@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-garden{
+    width: 100vw;
+    height: 100vh;
+    
+    position: relative;
+    
+    background-image: url('./img/garden.svg');
+    background-size: cover;
+}
+
+.hole-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+
+    padding-top: 195px;
+}
+
+.row-1,
+.row-2,
+.row-3{
+    display: flex;
+    flex-direction: row;  
+    gap: 52px;
+}
+
+img{
+    width: 181.81px;
+    height: 128.28px;
+}
+
+.mole-animation-container-1{
+    position: relative;
+}
+
+.mole-animation-container-2{
+    position: relative;
+}
+
+.mole-animation-container-3{
+    position: relative;
+}
+
+.mole-1{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1100ms 950ms;
+    animation-direction: reverse;
+}
+
+.mole-2{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1100ms 1100ms;
+}
+
+.mole-3{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1130ms 1250ms;
+}
+
+.mole-4{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1100ms 3800ms;
+    animation-direction: reverse;
+}
+
+.mole-5{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1100ms 3900ms;
+}
+
+.mole-6{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1130ms 4000ms;
+}
+
+.mole-7{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1100ms 6650ms;
+    animation-direction: reverse;
+}
+
+.mole-8{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1100ms 6750ms;
+}
+
+.mole-9{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    animation: moleAnimation 1130ms 6850ms;
+}
+
+@keyframes moleAnimation{
+    from{
+        z-index: 1;
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
